@@ -3,77 +3,114 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sarvamchandha | Vedic Astrology Consultation</title>
+<title>Sarvamchandha | Vedic Astrology by Vasantha M</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background: #0e0e1a;
-    color: #ffffff;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    color: white;
 }
 
 header {
-    background: linear-gradient(135deg, #1a1a40, #2b0a3d);
-    padding: 60px 20px;
     text-align: center;
+    padding: 40px 20px;
 }
 
-header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
+.logo {
+    max-width: 600px;
+    width: 90%;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.6);
 }
 
-header p {
+.title {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #ffd700;
+}
+
+.subtitle {
     font-size: 18px;
     opacity: 0.9;
+    margin-bottom: 30px;
 }
 
 .section {
-    padding: 50px 20px;
-    max-width: 1000px;
+    padding: 60px 20px;
+    max-width: 1100px;
     margin: auto;
 }
 
 .section h2 {
     text-align: center;
-    margin-bottom: 30px;
-    color: #f5c542;
+    margin-bottom: 40px;
+    color: #ffd700;
+    font-size: 28px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
 }
 
 .card {
-    background: #1c1c2e;
+    background: rgba(255,255,255,0.08);
     padding: 25px;
-    margin: 20px 0;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
 }
 
-.contact-box {
-    background: #141426;
-    padding: 30px;
-    border-radius: 10px;
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.contact {
     text-align: center;
+    background: rgba(0,0,0,0.4);
+    padding: 40px;
+    border-radius: 12px;
 }
 
-.contact-box p {
+.contact p {
     font-size: 18px;
     margin: 10px 0;
 }
 
-footer {
-    background: #111;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-    color: #aaa;
-}
 a {
-    color: #f5c542;
+    color: #ffd700;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: underline;
+}
+
+button {
+    background: #ffd700;
+    color: black;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: white;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+    background: #000;
+    color: #bbb;
 }
 </style>
 </head>
@@ -81,49 +118,57 @@ a:hover {
 <body>
 
 <header>
-    <h1>Sarvamchandha</h1>
-    <p>Authentic Vedic Astrology Consultation & Horoscope Reading</p>
+    <img src="logo.png" class="logo" alt="Sarvamchandha Logo">
+    <div class="title">Sarvamchandha</div>
+    <div class="subtitle">Authentic Vedic Astrology Consultation | Parashara Method</div>
 </header>
 
 <section class="section">
-    <h2>About Consultation</h2>
+    <h2>Astrology Services</h2>
 
-    <div class="card">
-        <p>
-        Personalized horoscope reading based on traditional Vedic astrology principles.
-        Detailed analysis of birth chart including planetary strengths, yogas,
-        dashas and transit influences.
-        </p>
-    </div>
+    <div class="cards">
+        <div class="card">
+            <h3>Individual Horoscope Reading</h3>
+            <p>Comprehensive birth chart analysis with planetary strengths, yogas, and life direction insights.</p>
+        </div>
 
-    <div class="card">
-        <p>
-        Services include:
-        <br>• Individual Horoscope Reading
-        <br>• Career & Financial Guidance
-        <br>• Marriage Compatibility Analysis
-        <br>• Health & Life Event Predictions
-        <br>• Dasha & Transit Forecast
-        </p>
+        <div class="card">
+            <h3>Dasha & Transit Predictions</h3>
+            <p>Detailed timing of events based on classical Vimshottari Dasha and transit influences.</p>
+        </div>
+
+        <div class="card">
+            <h3>Marriage & Compatibility</h3>
+            <p>Traditional Guna matching and long-term compatibility evaluation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Career & Financial Guidance</h3>
+            <p>Professional direction analysis based on planetary configurations and strengths.</p>
+        </div>
     </div>
 </section>
 
 <section class="section">
-    <h2>Contact for Consultation</h2>
+    <h2>Book Consultation</h2>
 
-    <div class="contact-box">
-        <p><strong>Name:</strong> Vasantha M</p>
+    <div class="contact">
+        <p><strong>Astrologer:</strong> Vasantha M</p>
         <p><strong>Email:</strong> <a href="mailto:vasanth835@gmail.com">vasanth835@gmail.com</a></p>
         <p><strong>Phone:</strong> <a href="tel:9739640003">9739640003</a></p>
-        <p>Please contact via email or phone for appointment booking.</p>
+        <p>Please contact via email or phone to schedule your personalized consultation.</p>
+
+        <button onclick="window.location.href='mailto:vasanth835@gmail.com'">
+            Request Appointment
+        </button>
     </div>
 </section>
 
 <footer>
     <p>
-    Disclaimer: All horoscope readings and predictions are based on traditional
-    Vedic Astrology principles following the Parashara Method.
-    These insights are for guidance purposes only.
+    Disclaimer: All horoscope readings and predictions are based on traditional Vedic Astrology
+    principles following the Parashara Method. Guidance is spiritual in nature and not a substitute
+    for medical, legal, or financial advice.
     </p>
     <p>© 2026 Sarvamchandha.space</p>
 </footer>

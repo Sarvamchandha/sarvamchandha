@@ -103,7 +103,7 @@ display:grid;
 grid-template-columns:repeat(4,1fr);
 grid-template-rows:repeat(4,1fr);
 position:relative;
-margin:20px;
+margin:120px;
 }
 
 .chart div{
@@ -269,13 +269,32 @@ border-top:1px solid #d4af37;
 <h2 style="color:#d4af37;">Book Consultation</h2>
 
 <form action="https://formsubmit.co/sarvamchandha@gmail.com" method="POST">
+
+<!-- Hidden settings -->
+<input type="hidden" name="_subject" value="New Consultation Request - Sarvamchandha">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_autoresponse" value="Thank you for contacting Sarvamchandha. We have received your request and will respond shortly.">
+
+<!-- Client Details -->
 <input type="text" name="name" placeholder="Full Name" required>
+
+<input type="email" name="client_email" placeholder="Your Email Address" required>
+
+<input type="tel" name="phone" placeholder="Mobile Number (WhatsApp Preferred)" pattern="[0-9]{10}" required>
+
 <input type="date" name="dob" required>
+
 <input type="time" name="tob" required>
+
 <input type="text" name="place" placeholder="Birth Place" required>
+
 <textarea name="message" placeholder="Your Concern"></textarea>
+
 <button type="submit">Submit Consultation</button>
+
 </form>
+
 
 <a href="https://wa.me/919739640003" target="_blank">
 <button class="whatsapp">Book via WhatsApp</button>

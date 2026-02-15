@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sarvamchandha Astrology | Best Vedic Astrologer in Bangalore</title>
 
 <meta name="description" content="Best Vedic Astrologer in Bangalore offering horoscope reading, marriage matching, Panchanga details and accurate spiritual guidance.">
-<meta name="keywords" content="Best Astrologer Bangalore, Vedic Astrology Bangalore, Panchanga Today Bangalore, Rahu Kalam Bangalore">
+<meta name="keywords" content="Best Astrologer Bangalore, Vedic Astrology Bangalore, Panchanga Today Bangalore">
 
 <link rel="icon" type="image/png" href="favicon.png">
 
@@ -17,6 +16,26 @@ margin:0;
 font-family:'Segoe UI',sans-serif;
 background:#0b1623;
 color:white;
+}
+
+/* Running Header */
+.ticker{
+background:#d4af37;
+color:black;
+padding:8px;
+white-space:nowrap;
+overflow:hidden;
+box-sizing:border-box;
+font-weight:bold;
+}
+.ticker span{
+display:inline-block;
+padding-left:100%;
+animation:scroll 18s linear infinite;
+}
+@keyframes scroll{
+0%{transform:translateX(0);}
+100%{transform:translateX(-100%);}
 }
 
 .container{display:flex;}
@@ -39,8 +58,8 @@ text-align:center;
 .panchanga-box{
 background:rgba(212,175,55,0.08);
 border:1px solid #d4af37;
-padding:12px;
-margin-bottom:15px;
+padding:10px;
+margin-bottom:12px;
 border-radius:8px;
 font-size:14px;
 }
@@ -62,7 +81,6 @@ font-weight:bold;
 header{
 text-align:center;
 padding:20px;
-animation:fadeIn 2s ease;
 }
 
 header img{width:130px;}
@@ -76,20 +94,36 @@ border-radius:6px;
 margin-bottom:20px;
 }
 
-.chart-consult{
-display:flex;
-justify-content:space-between;
-align-items:flex-start;
-flex-wrap:wrap;
-}
-
+/* SOUTH INDIAN CHART GRID */
 .chart{
-width:300px;
-height:300px;
+width:320px;
+height:320px;
 border:2px solid #d4af37;
+display:grid;
+grid-template-columns:repeat(4,1fr);
+grid-template-rows:repeat(4,1fr);
 position:relative;
 margin:20px;
 }
+
+.chart div{
+border:1px solid #d4af37;
+}
+
+.house{
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:22px;
+color:#d4af37;
+font-weight:bold;
+}
+
+.empty{
+border:none;
+background:#08101a;
+}
+
 
 .sign{
 position:absolute;
@@ -98,9 +132,10 @@ color:#d4af37;
 transition:all 1s ease;
 }
 
-@keyframes fadeIn{
-0%{opacity:0;}
-100%{opacity:1;}
+.chart-consult{
+display:flex;
+flex-wrap:wrap;
+align-items:flex-start;
 }
 
 .consult-box{
@@ -173,21 +208,23 @@ border-top:1px solid #d4af37;
 
 <body>
 
+<div class="ticker">
+<span>Classical Parashara Method | Authentic Vedic Astrology | Horoscope Consultation Across India</span>
+</div>
+
 <div class="container">
 
 <!-- LEFT PANEL -->
 <div class="sidebar">
 <h2>Bangalore Panchanga</h2>
-
 <div id="panchangaContent"></div>
-
 </div>
 
 <!-- RIGHT CONTENT -->
 <div class="main-content">
 
 <div class="top-contact">
-📞 +91-9739640003 | 📧 sarvamchandha@gmail.com | Bangalore, India
+📞 +91-9739640003 | 📧 sarvamchandha@gmail.com | India
 </div>
 
 <header>
@@ -203,7 +240,30 @@ border-top:1px solid #d4af37;
 <!-- CHART + CONSULT -->
 <div class="chart-consult">
 
-<div class="chart" id="southChart"></div>
+<div class="chart" id="southChart">
+
+<div class="house">♈</div>
+<div class="house">♉</div>
+<div class="house">♊</div>
+<div class="house">♋</div>
+
+<div class="house">♌</div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="house">♍</div>
+
+<div class="house">♎</div>
+<div class="empty"></div>
+<div class="empty"></div>
+<div class="house">♏</div>
+
+<div class="house">♐</div>
+<div class="house">♑</div>
+<div class="house">♒</div>
+<div class="house">♓</div>
+
+</div>
+
 
 <div class="consult-box">
 <h2 style="color:#d4af37;">Book Consultation</h2>
@@ -217,11 +277,11 @@ border-top:1px solid #d4af37;
 <button type="submit">Submit Consultation</button>
 </form>
 
-<a href="https://wa.me/91XXXXXXXXXX" target="_blank">
+<a href="https://wa.me/919739640003" target="_blank">
 <button class="whatsapp">Book via WhatsApp</button>
 </a>
-
 </div>
+
 </div>
 
 <!-- SERVICES -->
@@ -236,14 +296,13 @@ border-top:1px solid #d4af37;
 <div class="service-box">Yearly Horoscope</div>
 </div>
 
-<!-- WHY BOX -->
+<!-- WHY CHOOSE -->
 <div class="why-box">
 <h2 style="color:#d4af37;">Why Choose Sarvamchandha?</h2>
-<p>
-Sarvamchandha Astrology follows authentic Vedic principles with Bangalore-specific Panchanga calculations.
-Each consultation is confidential, spiritually aligned, and practically guided for marriage, career,
-finance and life direction. Personalized remedies and accurate predictions ensure clarity and confidence.
-</p>
+<p>✔ Classical Parashara Method</p>
+<p>✔ Detailed Dasha & Transit Analysis</p>
+<p>✔ Accurate Event Timing</p>
+<p>✔ Personal Discussion & Guidance</p>
 </div>
 
 <footer>
@@ -255,9 +314,9 @@ finance and life direction. Personalized remedies and accurate predictions ensur
 
 <script>
 
-/* Bangalore Panchanga Auto Update */
-const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
-const rahuTimings = {
+/* Panchanga Auto Update */
+const weekdays=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const rahu={
 Sunday:"4:30 PM - 6:00 PM",
 Monday:"7:30 AM - 9:00 AM",
 Tuesday:"3:00 PM - 4:30 PM",
@@ -266,7 +325,7 @@ Thursday:"1:30 PM - 3:00 PM",
 Friday:"10:30 AM - 12:00 PM",
 Saturday:"9:00 AM - 10:30 AM"
 };
-const yamagandamTimings = {
+const yamagandam={
 Sunday:"12:00 PM - 1:30 PM",
 Monday:"10:30 AM - 12:00 PM",
 Tuesday:"9:00 AM - 10:30 AM",
@@ -276,41 +335,19 @@ Friday:"3:00 PM - 4:30 PM",
 Saturday:"1:30 PM - 3:00 PM"
 };
 
-let today = new Date();
-let dayName = weekdays[today.getDay()];
+let today=new Date();
+let dayName=weekdays[today.getDay()];
 
-document.getElementById("panchangaContent").innerHTML = `
-<div class="panchanga-box"><b>Previous Nakshatra:</b> Rohini</div>
-<div class="panchanga-box"><b>Current Nakshatra:</b> Mrigashira</div>
-<div class="panchanga-box"><b>Next Nakshatra:</b> Ardra</div>
+document.getElementById("panchangaContent").innerHTML=`
 <div class="panchanga-box"><b>Tithi:</b> Shukla Panchami</div>
 <div class="panchanga-box"><b>Yoga:</b> Siddha</div>
 <div class="panchanga-box"><b>Karana:</b> Bava</div>
 <div class="panchanga-box"><b>Sunrise:</b> 6:32 AM</div>
 <div class="panchanga-box"><b>Sunset:</b> 6:18 PM</div>
-<div class="panchanga-box"><b>Rahu Kalam (${dayName}):</b> ${rahuTimings[dayName]}</div>
-<div class="panchanga-box"><b>Yamagandam (${dayName}):</b> ${yamagandamTimings[dayName]}</div>
+<div class="panchanga-box"><b>Rahu Kalam (${dayName}):</b> ${rahu[dayName]}</div>
+<div class="panchanga-box"><b>Yamagandam (${dayName}):</b> ${yamagandam[dayName]}</div>
 `;
 
-/* South Indian Chart Sign Rotation */
-const signs=["♈","♉","♊","♋","♌","♍","♎","♏","♐","♑","♒","♓"];
-const chart=document.getElementById("southChart");
-
-signs.forEach((sign,i)=>{
-let div=document.createElement("div");
-div.className="sign";
-div.innerText=sign;
-div.style.top=(Math.random()*250)+"px";
-div.style.left=(Math.random()*250)+"px";
-chart.appendChild(div);
-});
-
-setInterval(()=>{
-document.querySelectorAll(".sign").forEach(sign=>{
-sign.style.top=(Math.random()*250)+"px";
-sign.style.left=(Math.random()*250)+"px";
-});
-},4000);
 
 </script>
 

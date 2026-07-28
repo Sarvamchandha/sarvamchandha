@@ -1,0 +1,29 @@
+{
+  "metadata": {
+    "location": "Bengaluru, Karnataka, India",
+    "timezone": "Asia/Kolkata",
+    "ayanamsha": "Lahiri",
+    "month": "2026-07"
+  },
+  "days": {
+    "2026-07-29": {
+      "date": "2026-07-29",
+      "weekday": "Wednesday",
+      "vara": "Budhavara",
+      "sunrise": "TEST",
+      "sunset": "TEST",
+      "tithi": "Test Tithi",
+      "tithiEnd": "Test End Time",
+      "nakshatra": "Test Nakshatra",
+      "nakshatraPada": "1",
+      "nakshatraEnd": "Test End Time",
+      "yoga": "Test Yoga",
+      "karana": "Test Karana",
+      "paksha": "Test Paksha",
+      "rahuKalam": "Test Period",
+      "yamagandam": "Test Period",
+      "gulikaKalam": "Test Period",
+      "abhijitMuhurta": "Test Period"
+    }
+  }
+}

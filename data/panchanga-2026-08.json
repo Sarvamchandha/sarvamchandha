@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "location": "Bengaluru, Karnataka, India",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "timezone": "Asia/Kolkata",
+    "ayanamsha": "Lahiri",
+    "nodeMode": "Mean Node",
+    "month": "2026-08",
+    "generatedBy": "Sarvamchandha Panchanga Engine"
+  },
+  "days": {
+    "2026-08-01": {
+      "date": "2026-08-01",
+      "weekday": "Saturday",
+      "vara": "Shanivara",
+      "sunrise": "06:05 AM",
+      "sunset": "06:45 PM",
+      "tithi": "Replace with engine value",
+      "tithiEnd": "Replace with engine value",
+      "nakshatra": "Replace with engine value",
+      "nakshatraPada": "Replace with engine value",
+      "nakshatraEnd": "Replace with engine value",
+      "yoga": "Replace with engine value",
+      "yogaEnd": "Replace with engine value",
+      "karana": "Replace with engine value",
+      "karanaEnd": "Replace with engine value",
+      "paksha": "Replace with engine value",
+      "rahuKalam": "Replace with engine value",
+      "yamagandam": "Replace with engine value",
+      "gulikaKalam": "Replace with engine value",
+      "abhijitMuhurta": "Replace with engine value"
+    },
+
+    "2026-08-02": {
+      "date": "2026-08-02",
+      "weekday": "Sunday",
+      "vara": "Ravivara",
+      "sunrise": "Replace with engine value",
+      "sunset": "Replace with engine value",
+      "tithi": "Replace with engine value",
+      "tithiEnd": "Replace with engine value",
+      "nakshatra": "Replace with engine value",
+      "nakshatraPada": "Replace with engine value",
+      "nakshatraEnd": "Replace with engine value",
+      "yoga": "Replace with engine value",
+      "yogaEnd": "Replace with engine value",
+      "karana": "Replace with engine value",
+      "karanaEnd": "Replace with engine value",
+      "paksha": "Replace with engine value",
+      "rahuKalam": "Replace with engine value",
+      "yamagandam": "Replace with engine value",
+      "gulikaKalam": "Replace with engine value",
+      "abhijitMuhurta": "Replace with engine value"
+    }
+  }
+}

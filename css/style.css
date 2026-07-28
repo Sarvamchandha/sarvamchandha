@@ -834,67 +834,237 @@ font-size:17px;
 TABLET
 =========================================================*/
 
-@media(max-width:992px){
+@media (max-width: 992px) {
 
-.topbar{
+    .topbar {
 
-display:none;
+        display: none;
 
-}
+    }
 
-.logo img{
+    #header {
 
-width:60px;
+        position: sticky;
 
-height:60px;
+        top: 0;
 
-}
+        z-index: 9999;
 
-.logo h2{
+    }
 
-font-size:24px;
+    .navbar {
 
-}
+        position: relative;
 
-.logo p{
+        z-index: 9999;
 
-font-size:11px;
+    }
 
-}
+    .navbar .container {
 
-.mobile-menu{
+        position: relative;
 
-display:block;
+        display: flex;
 
-}
+        align-items: center;
 
-.nav-links{
+        justify-content: space-between;
 
-position:absolute;
+    }
 
-top:88px;
+    .logo img {
 
-left:0;
+        width: 60px;
 
-width:100%;
+        height: 60px;
 
-background:white;
+    }
 
-flex-direction:column;
+    .logo h2 {
 
-padding:35px;
+        font-size: 24px;
 
-display:none;
+    }
 
-box-shadow:0 15px 30px rgba(0,0,0,.15);
+    .logo p {
 
-}
+        font-size: 11px;
 
-.nav-links.show{
+    }
 
-display:flex;
+    .mobile-menu {
 
-}
+        position: relative;
+
+        z-index: 10002;
+
+        display: flex;
+
+        width: 46px;
+
+        height: 46px;
+
+        padding: 0;
+
+        flex: 0 0 46px;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background: transparent;
+
+        color: var(--maroon, #5B1E1E);
+
+        border: 1px solid rgba(91, 30, 30, 0.25);
+
+        border-radius: 8px;
+
+        font-size: 30px;
+
+        line-height: 1;
+
+        cursor: pointer;
+
+        transition:
+            background 0.3s ease,
+            color 0.3s ease,
+            border-color 0.3s ease;
+
+    }
+
+    .mobile-menu:hover,
+    .mobile-menu:focus-visible {
+
+        background: var(--maroon, #5B1E1E);
+
+        color: #FFFFFF;
+
+        border-color: var(--maroon, #5B1E1E);
+
+    }
+
+    .mobile-menu i {
+
+        pointer-events: none;
+
+    }
+
+    .nav-links {
+
+        position: absolute;
+
+        top: calc(100% + 1px);
+
+        left: 0;
+
+        right: 0;
+
+        z-index: 10001;
+
+        display: flex;
+
+        width: 100%;
+
+        max-height: 0;
+
+        margin: 0;
+
+        padding: 0 24px;
+
+        overflow: hidden;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 0;
+
+        background: #FFFFFF;
+
+        border-top: 1px solid rgba(91, 30, 30, 0.12);
+
+        box-shadow: 0 16px 30px rgba(0, 0, 0, 0.15);
+
+        opacity: 0;
+
+        visibility: hidden;
+
+        transform: translateY(-10px);
+
+        transition:
+            max-height 0.35s ease,
+            padding 0.35s ease,
+            opacity 0.25s ease,
+            visibility 0.25s ease,
+            transform 0.35s ease;
+
+    }
+
+    .nav-links.show {
+
+        max-height: 650px;
+
+        padding-top: 18px;
+
+        padding-bottom: 18px;
+
+        opacity: 1;
+
+        visibility: visible;
+
+        transform: translateY(0);
+
+    }
+
+    .nav-links li {
+
+        display: block;
+
+        width: 100%;
+
+        margin: 0;
+
+        border-bottom: 1px solid rgba(91, 30, 30, 0.10);
+
+    }
+
+    .nav-links li:last-child {
+
+        border-bottom: none;
+
+    }
+
+    .nav-links a {
+
+        display: block;
+
+        width: 100%;
+
+        padding: 14px 6px;
+
+        color: var(--maroon, #5B1E1E);
+
+        font-size: 15px;
+
+        font-weight: 500;
+
+        text-align: left;
+
+    }
+
+    .nav-links a::after {
+
+        display: none;
+
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+
+        color: var(--gold, #D4AF37);
+
+    }
 
 }
 
@@ -903,35 +1073,72 @@ display:flex;
 MOBILE
 =========================================================*/
 
-@media(max-width:576px){
+@media (max-width: 576px) {
 
-.logo h2{
+    .navbar {
 
-font-size:21px;
+        height: 80px;
+
+    }
+
+    .logo img {
+
+        width: 54px;
+
+        height: 54px;
+
+    }
+
+    .logo h2 {
+
+        font-size: 21px;
+
+    }
+
+    .logo p {
+
+        display: none;
+
+    }
+
+    .mobile-menu {
+
+        width: 42px;
+
+        height: 42px;
+
+        flex-basis: 42px;
+
+        font-size: 27px;
+
+    }
+
+    .nav-links {
+
+        padding-left: 18px;
+
+        padding-right: 18px;
+
+    }
+
+    .nav-links.show {
+
+        padding-top: 14px;
+
+        padding-bottom: 14px;
+
+    }
+
+    .nav-links a {
+
+        padding: 13px 4px;
+
+        font-size: 14px;
+
+    }
 
 }
 
-.logo p{
-
-display:none;
-
-}
-
-.navbar{
-
-height:80px;
-
-}
-
-.logo img{
-
-width:54px;
-
-height:54px;
-
-}
-
-}
 
 /*=========================================================
 MODULE 03

@@ -1,16 +1,55 @@
-## Hi there 👋
+SARVAMCHANDHA
 
-<!--
-**Sarvamchandha/sarvamchandha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Traditional Vedic Astrology
 
-Here are some ideas to get you started:
+Website
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+------------------------------------
+
+Domain
+
+https://sarvamchandha.co.in
+
+------------------------------------
+
+Technology
+
+HTML5
+
+CSS3
+
+JavaScript
+
+Python Backend
+
+Swiss Ephemeris
+
+Responsive Design
+
+------------------------------------
+
+Folder Structure
+
+/css
+
+/js
+
+/images
+
+/fonts
+
+/api
+
+/assets
+
+------------------------------------
+
+Version
+
+1.0
+
+------------------------------------
+
+Author
+
+Sarvamchandha

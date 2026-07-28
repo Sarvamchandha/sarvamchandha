@@ -10,20 +10,20 @@
       "date": "2026-07-29",
       "weekday": "Wednesday",
       "vara": "Budhavara",
-      "sunrise": "TEST",
-      "sunset": "TEST",
-      "tithi": "Test Tithi",
-      "tithiEnd": "Test End Time",
-      "nakshatra": "Test Nakshatra",
+      "sunrise": "05:35 AM",
+      "sunset": "06:35 PM",
+      "tithi": "Purnima",
+      "tithiEnd": "08:05PM",
+      "nakshatra": "Uttara Ashadha",
       "nakshatraPada": "1",
-      "nakshatraEnd": "Test End Time",
-      "yoga": "Test Yoga",
-      "karana": "Test Karana",
-      "paksha": "Test Paksha",
-      "rahuKalam": "Test Period",
-      "yamagandam": "Test Period",
-      "gulikaKalam": "Test Period",
-      "abhijitMuhurta": "Test Period"
+      "nakshatraEnd": "03:37PM",
+      "yoga": "Priti",
+      "karana": "Vishti",
+      "paksha": "Shukla",
+      "rahuKalam": "12.04 PM to 01:41PM",
+      "yamagandam": "07:30 AM to 09:00 AM",
+      "gulikaKalam": "10:30 AM to 12:00 PM",
+      "abhijitMuhurta": "12:00 PM to 12:51 PM"
     }
   }
 }
